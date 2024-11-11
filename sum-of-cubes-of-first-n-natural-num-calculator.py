@@ -10,7 +10,7 @@ def sumOfSeries(n):
 
 
 # Driver Function
-n = 5
+n = int(input("Enter the number:"))
 print(sumOfSeries(n))
 
 # Code Contributed by Mohit Gupta_OMG <(0_o)>
