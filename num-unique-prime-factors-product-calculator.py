@@ -30,5 +30,5 @@ def productPrimeFactors(n):
 	return product	 
 	
 # main() 
-n = 44
+n = int(input("Enter the number:"))
 print (int(productPrimeFactors(n))) 
