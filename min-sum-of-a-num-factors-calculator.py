@@ -11,7 +11,7 @@ def find_min_sum(num):
 	return min_sum
 
 # driver code
-number = 16
+number = int(input("Enter the number:"))
 
 # Call the function and print the result
 result = find_min_sum(number)
