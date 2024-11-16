@@ -27,5 +27,5 @@ def primeFactors(n):
 		
 # Driver Program to test above function
 
-n = 315
+n = int(input('Enter the number:'))
 primeFactors(n)
