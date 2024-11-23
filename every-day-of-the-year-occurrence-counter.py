@@ -37,5 +37,5 @@ def day_occur_time(year):
 	
 
 # Driver Code 
-year = 2019
+year = int(input('Enter the year:'))
 day_occur_time(year)
