@@ -12,8 +12,8 @@ def gcd(a, b):
 		return gcd(a-b, b)
 	return gcd(a, b-a)
 
-a = 98
-b = 56
+a = int(input('Enter the first number:'))
+b = int(input('Enter the second number:'))
 if(gcd(a, b)):
 	print('GCD of', a, 'and', b, 'is', gcd(a, b))
 else:
