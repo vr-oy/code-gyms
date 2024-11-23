@@ -14,9 +14,9 @@ def all_sundays(year):
         # Move to the next Sunday by adding 7 days
         dt += timedelta(days=7)
 
-year = 2020
+year = int(input('Enter the year:'))
 
-# Iterate through all Sundays of the year 2020 using the all_sundays function
+# Iterate through all Sundays of the year using the all_sundays function
 for s in all_sundays(year):
     # Print each Sunday
     print(s)
