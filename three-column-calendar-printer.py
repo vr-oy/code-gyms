@@ -3,7 +3,7 @@ import calendar
 # Create a TextCalendar object starting from Sunday as the first day of the week
 cal = calendar.TextCalendar(calendar.SUNDAY)
 
-year = 2022
+year = int(input('Enter the year:'))
 
 # Specify the formatting parameters for the year calendar
 # year
