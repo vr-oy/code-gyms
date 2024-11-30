@@ -1,7 +1,7 @@
 # Program to check Armstrong numbers in a certain interval
 
-lower = 100
-upper = 2000
+lower = int(input('Enter the minimum number'))
+upper = int(input('Enter the maximum number'))
 
 for num in range(lower, upper + 1):
 
