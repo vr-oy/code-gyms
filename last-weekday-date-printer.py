@@ -1,7 +1,4 @@
-# Import the date class from the datetime module
-from datetime import date
-# Import the timedelta class from the datetime module
-from datetime import timedelta
+from datetime import date, timedelta
 
 # Get the current date and assign it to the variable 'today'
 today = date.today()
