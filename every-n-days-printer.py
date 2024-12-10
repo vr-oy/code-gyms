@@ -1,7 +1,10 @@
 # Import the datetime module
 import datetime
 
-num_of_dates = 12
+
+year = int(input('Enter the year:'))
+num_of_dates = int(input('Enter the number of dates to print:'))
+interval = int(input('Enter the number of days between dates:'))
 
 # Define a function named every_20_days that takes a date object (date) as input
 def every_n_days(interval,date):
@@ -15,9 +18,6 @@ def every_n_days(interval,date):
         date = date + datetime.timedelta(days=interval)
         # Print the resulting date
         print('{d}'.format(d=date))
-
-year = 2016
-interval = 20
 
 # Define a date object representing the date
 dt = datetime.date(year, 1, 1)
