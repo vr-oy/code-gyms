@@ -4,5 +4,5 @@ def myfunc(n):
 			print("* ",end="")
 		print("\r")
 
-n = 5
+n = int(input('Enter the pattern size:'))
 myfunc(n)
