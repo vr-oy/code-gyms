@@ -1,4 +1,5 @@
-# TODO: replace 10 with n
+
+n = 10
 
 # Define a function named 'test' that takes a list of numbers as input
 # The function filters numbers greater than n with odd first and last digits
@@ -13,7 +14,7 @@ print("Original list of numbers:")
 # Print the original list of numbers
 print(nums)
 # Print a message indicating the task and the result of the test function applied to 'nums'
-print("Numbers of the said array that are greater than 10 and have odd first and last digits:")
+print("Numbers of the said array that are greater than n and have odd first and last digits:")
 # Print the result of the test function applied to 'nums'
 print(test(nums))
 
@@ -24,6 +25,6 @@ print("\nOriginal list of numbers:")
 # Print the original list of numbers
 print(nums)
 # Print a message indicating the task and the result of the test function applied to 'nums'
-print("Numbers of the said array that are greater than 10 and have odd first and last digits:")
+print("Numbers of the said array that are greater than n and have odd first and last digits:")
 # Print the result of the test function applied to 'nums'
 print(test(nums))
