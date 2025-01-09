@@ -2,8 +2,10 @@
 def test(n):
     # Check if any digit in the number is odd
     if any(int(c) % 2 for c in str(n)):
+        
         # Initialize a variable 'prod' to store the product of odd digits
         prod = 1
+        
         # Iterate over each digit in the number
         for c in str(n):
             # If the digit is odd, multiply it with the current product
