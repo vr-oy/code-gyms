@@ -10,20 +10,13 @@ def test(nums):
 def is_prime(n):
     return n > 1 and all(n % j for j in range(2, int(n ** 0.5) + 1))
 
-# Example 1
-nums1 = [3, 7, 4]
-print("List of numbers:", nums1)
-print("Index of the largest prime in the said list and the sum of its digits:")
-print(test(nums1))
-
-# Example 2
-nums2 = [3, 11, 7, 17, 19, 4]
-print("\nList of numbers:", nums2)
-print("Index of the largest prime in the said list and the sum of its digits:")
-print(test(nums2))
-
-# Example 3
-nums3 = [23, 17, 201, 14, 10473, 43225, 421, 423, 11, 10, 2022, 342157]
-print("\nList of numbers:", nums3)
-print("Index of the largest prime in the said list and the sum of its digits:")
-print(test(nums3))
+list_str:str = input('Enter the comma separated numbers:')
+if(not list_str or not all(map(lambda item : item.isnumeric(),list_str.split(',')))):
+    print('the input is invalid')
+else:
+    # Create a list 'nums' with specific elements
+    nums = list(map(int,list_str.split(',')))
+        
+    print("List of numbers:", nums)
+    print("Index of the largest prime in the said list and the sum of its digits:")
+    print(test(nums))
