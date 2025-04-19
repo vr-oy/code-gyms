@@ -3,16 +3,16 @@ import re
 
 class Input_Utils:
     @classmethod
-    def get_number_list_interactively(cls) -> list[int] | None:
-        print('Enter the comma separated numbers:')
+    def get_number_list_interactively(cls,options={}) -> list[int] | None:
+        print(options.get('inputText') or 'Enter the comma separated numbers:')
         try:
             nums = cls.get_number_list()
-            print("List of numbers:", nums)
+            print(options.get('confirmText') or "List of numbers:", nums)
             return nums
         except ValueError as e:
-            print('the input is invalid')
+            print(options.get('errorText') or 'the input is invalid')
             return None
-    
+
     @staticmethod
     def get_number_list() -> list[int] | Never:
         list_str:str = input()
