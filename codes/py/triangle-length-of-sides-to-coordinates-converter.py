@@ -1,3 +1,5 @@
+from .utils.input_utils import Input_Utils
+
 # Define a function named 'test' that takes a list 'sides' representing the side lengths of a triangle
 def test(sides):
     # Sort the side lengths in ascending order and assign them to variables a, b, and c
@@ -19,22 +21,7 @@ def test(sides):
     return [[0.0, 0.0], [a, 0.0], [x, y]]
 
 # Assign a specific list of side lengths 'sides' to the variable
-sides = [3, 4, 5]
-
-# Print the side lengths of the triangle
-print("Sides of the triangle:", sides)
-
-# Print a message indicating the operation to be performed
-print("Coordinates of a triangle with the said side lengths:")
-
-# Print the result of the test function applied to the 'sides' list
-print(test(sides))
-
-# Assign another specific list of side lengths 'sides' to the variable
-sides = [5, 6, 7]
-
-# Print the side lengths of the triangle
-print("\nSides of the triangle:", sides)
+sides = Input_Utils.get_number_list_interactively({"confirmText":"Sides of the triangle:"})
 
 # Print a message indicating the operation to be performed
 print("Coordinates of a triangle with the said side lengths:")
