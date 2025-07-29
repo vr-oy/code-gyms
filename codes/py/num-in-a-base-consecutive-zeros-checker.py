@@ -45,5 +45,5 @@ def check(N):
 	return True
 
 # Driver code
-N, K = 15, 8
+N, K = n = int(input("Enter the number:")), int(input("Enter the base:"))
 hasConsecutiveZeroes(N, K)
