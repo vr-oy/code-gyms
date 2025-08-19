@@ -21,7 +21,7 @@ def isDiff0(n):
  
  
 # driver code
-n = 1243
+n = int(input('Enter the number:'))
 if(isDiff0(n)):
     print("Yes")
 else:
